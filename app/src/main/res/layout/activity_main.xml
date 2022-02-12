@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSlogan"
+        android:gravity="center"
+        android:textColor="#FFDEAD"
+        android:text="You won't pay for the fuel" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            android:id="@+id/btnSignUp"
+            android:layout_margin="8dp"
+            android:shadowColor="@color/black"
+            android:backgroundTint="#523b50"
+
+            ></Button>
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:id="@+id/btnSignIn"
+            android:layout_margin="8dp"
+            android:shadowColor="@color/black"
+            android:backgroundTint="#815d72"
+            ></Button>
+    </LinearLayout>
+
+</RelativeLayout>
